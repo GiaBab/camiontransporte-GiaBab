@@ -44,7 +44,7 @@ object contenedor {
 	method peso()= 100+cosas.sum({c=>c.peso()})
 	method peligrosidad()=
 		if(cosas.size()>0)
-			{cosas.max({c=>c.peligrosidad()})}
+			{cosas.max({c=>c.peligrosidad()}).peligrosidad()}
 		else{0}
 }
 
@@ -53,7 +53,7 @@ object residuosRadioactivos {
 	
 	method nuevoPeso(numero){ peso = numero}
 	method peso()= peso
-	method peligrosidad()= 0
+	method peligrosidad()= 200
 }
 
 object embalajeSeguridad {

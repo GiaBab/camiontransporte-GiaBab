@@ -44,7 +44,7 @@ object contenedor {
 	method peso()= 100+cosas.sum({c=>c.peso()})
 	method peligrosidad()=
 		if(cosas.size()>0)
-			{cosas.max({c=>c.peligrosidad()})}
+			{cosas.max({c=>c.peligrosidad()}).peligrosidad()}
 		else{0}
 }
 
